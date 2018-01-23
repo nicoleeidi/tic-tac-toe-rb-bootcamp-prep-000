@@ -142,9 +142,12 @@ end
 def play(board)
   #counter=0
   #until counter == 9
-  until over?(board) == true 
+  until over?(board) == true
     turn(board)
     #counter +=1
   end
-  
+  if won?(board)!== false 
+    winner=winner(board)
+    return 
+
 end
