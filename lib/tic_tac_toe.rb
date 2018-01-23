@@ -140,12 +140,11 @@ end
 
 
 def play(board)
-  counter=0
-  until counter == 9
+  #counter=0
+  #until counter == 9
+  until over?(board) == true 
     turn(board)
-<<<<<<< HEAD
-    counter +=1
-=======
->>>>>>> e764562e82323327ea674f782953d35751dd3e04
+    #counter +=1
   end
+  
 end
