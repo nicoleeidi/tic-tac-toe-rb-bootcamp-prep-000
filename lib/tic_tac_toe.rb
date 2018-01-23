@@ -146,8 +146,10 @@ def play(board)
     turn(board)
     #counter +=1
   end
-  if won?(board)!== false 
+  if won?(board)!= false 
     winner=winner(board)
-    return 
+    return "Congratulations #{winner}!"
+  elsif draw?(board)== true 
+    "There has been a draw."
 
 end
